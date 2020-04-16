@@ -1,0 +1,38 @@
+<html>
+<script type="text/javascript">
+
+
+        function zoom() {
+            document.body.style.zoom = "400%" 
+        }
+
+var acorde = prompt("de la escala de F a que acorde pertenece el numero 4");
+
+var nota = "A#"
+
+if (acorde == nota){
+
+	alert("verdadero");
+
+}	else {
+
+	alert("falso");
+}
+   	var direcciones = new Array("F1.html","F2.html","F3.html","F4.html", "F5.html", "F6.html", "F7.html")
+   	function enlaceAleatorio()
+	{ 
+      	aleat = Math.random() * direcciones.length 
+      	aleat = Math.floor(aleat) 
+      	window.location=direcciones[aleat] 
+   	}
+
+</script>
+<body onload="zoom()">
+<h6>
+<div align="center">
+  <input type="button" value="Haz click y escribe en mayuscula la primera letra" name="Back2" onclick="javascript:enlaceAleatorio()" />
+</div>
+</h6>
+</body>
+</head>
+</html>

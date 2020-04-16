@@ -1,0 +1,45 @@
+<html>
+<script type="text/javascript">
+
+        function zoom() {
+            document.body.style.zoom = "400%" 
+        }
+
+function MaysPrimera(string){
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+var acorde = prompt("de la escala de A a que acorde pertenece el numero 1");
+
+acorde = MaysPrimera(acorde.toLowerCase());
+
+var nota = "A"
+
+if (acorde == nota){ 
+
+	alert("verdadero");
+
+}	else {
+
+	alert("falso");
+
+}
+
+   	var direcciones = new Array("A1.html","A2.html","A3.html","A4.html", "A5.html", "A6.html", "A7.html")
+   	function enlaceAleatorio()
+	{ 
+      	aleat = Math.random() * direcciones.length 
+      	aleat = Math.floor(aleat) 
+      	window.location=direcciones[aleat] 
+   	} 
+
+</script>
+
+<body onload="zoom()">
+<h6>
+<div align="center">
+  <input type="button" value="Haz click y escribe en mayuscula la primera letra" name="Back2" onclick="javascript:enlaceAleatorio()" />
+</div>
+</h6>
+</body>
+</html>

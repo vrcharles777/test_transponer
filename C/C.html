@@ -1,0 +1,26 @@
+<html> 
+<head> 
+<script>
+
+        function zoom() {
+            document.body.style.zoom = "400%" 
+        }
+
+   	var direcciones = new Array("C1.html","C2.html","C3.html","C4.html", "C5.html", "C6.html", "C7.html")
+   	function enlaceAleatorio(){ 
+      	aleat = Math.random() * direcciones.length 
+      	aleat = Math.floor(aleat) 
+      	window.location=direcciones[aleat] 
+   	} 
+</script> 
+
+
+<body onload="zoom()">
+<h6>
+<div align="center">
+  <input type="button" value="Haz click y escribe en mayuscula la primera letra" name="Back2" onclick="javascript:enlaceAleatorio()" />
+</div>
+</h6>
+</body>
+</head> 
+</html> 
